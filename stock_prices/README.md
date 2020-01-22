@@ -4,6 +4,19 @@ You want to write a bot that will automate the task of day-trading for you while
 
 Write a function `find_max_profit` that receives as input a list of stock prices. Your function should return the maximum profit that can be made from a single buy and sell. You must buy first before selling; no shorting is allowed here.
 
+`find_max_profit([1050, 270, 1540, 3800, 2])`
+                        ^ buy       ^ sell
+
+* num_lo = The lowest number that is not the last number (range(0, len(arr - 1)))
+* num_hi = The highest number after num_lo 
+* compare = num_hi - num_lo
+
+or
+
+* spread = loop through numbers and calculate the spread between each pair r - s
+* for r in list: for s in list:
+*  = store spreads in list
+
 For example, `find_max_profit([1050, 270, 1540, 3800, 2])` should return 3530, which is the maximum profit that can be made from a single buy and then sell of these stock prices. 
 
 ## Testing
